@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.conf import settings
+print(settings.TEMPLATE_DIRS)
 
 def page1(request):
     return render(request, 'page1.html')
